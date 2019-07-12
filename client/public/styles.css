@@ -110,3 +110,7 @@ html, body {
 .mdl-layout-title{
   color:#ffc107;
 }
+.frontIMG{
+  width: 100%;
+  height: 400px;
+}
