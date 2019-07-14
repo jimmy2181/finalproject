@@ -1,20 +1,20 @@
 import axios from "axios";
 
 export default {
-  // Gets all stocks
-  getstocks: function() {
-    return axios.get("/api/stocks");
+  // Gets all users
+  getUsers: function() {
+    return axios.get("/api/users");
   },
   // Gets the stock with the given id
-  getstock: function(id) {
-    return axios.get("/api/stocks/" + id);
+  getUser: function(id) {
+    return axios.get("/api/users/" + id);
   },
   // Deletes the stock with the given id
-  deletestock: function(id) {
-    return axios.delete("/api/stocks/" + id);
+  deleteUser: function(id) {
+    return axios.delete("/api/users/" + id);
   },
   // Saves a stock to the database
-  savestock: function(stockData) {
-    return axios.post("/api/stocks", stockData);
+  saveUser: function(userData) {
+    return axios.post("/api/users", userData);
   }
 };
