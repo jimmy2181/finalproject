@@ -1,110 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>final pro</title>
-    <link rel="shortcut icon" href="images/favicon.png">
-
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
      
+    </header>
+    <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+      <header class="demo-drawer-header">
+        <img src="https://images.pexels.com/photos/36715/pigeon-flight-twig.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="Logo">
+        <div class="logoSpot">
+        <div class="mdl-layout-spacer"></div>
+        </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-          <img src="https://images.pexels.com/photos/36715/pigeon-flight-twig.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="Logo">
-          <div class="logoSpot">
-          <div class="mdl-layout-spacer"></div>
+      <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">home</i>Home</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">person</i>Your Stocks</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">trending_up</i>Stock Market</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">pie_chart</i>Budget</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">verified_user</i>Log in / Log out</a>
+
+
+         
+        <div class="mdl-layout-spacer"></div>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+      </nav>
+    </div>
+    
+
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="mdl-grid demo-content">
+        <div class="demo-charts mdl-color--blue-grey-900 mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+          <img class="frontIMG" src="car3.png">
           </div>
-        </header>
-        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">person</i>Your Stocks</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">trending_up</i>Stock Market</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">pie_chart</i>Budget</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">verified_user</i>Log in / Log out</a>
+          
+          
+          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                <h2 class="mdl-card__title-text " id="yellowCard">Stocks</h2>
+              </div>
+              </div>
+              </div>
+
+              <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                  <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                    <h2 class="mdl-card__title-text " id="blueCard">Stocks</h2>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                      <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                        <h2 class="mdl-card__title-text ">Stocks</h2>
+                      </div>
+                      </div> 
+                      </div>
+                      <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                        <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                          <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                            <h2 class="mdl-card__title-text " id="blueCard">News</h2>
+                          </div>
+                          </div>
+                          </div>
+          
+                          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                              <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                                <h2 class="mdl-card__title-text " color="">News</h2>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                                  <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                                    <h2 class="mdl-card__title-text " id="blueCard">News</h2>
+                                  </div>
+                                  </div>
+                                  </div>
 
 
-           
-          <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
-        </nav>
-      </div>
-      
+        </main>
+   
+          <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>React App</title>
+  </head>
+ 
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-      <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--blue-grey-900 mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <img class="frontIMG" src="car3.png">
-            </div>
-            
-            
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-              <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
-                  <h2 class="mdl-card__title-text " id="yellowCard">News</h2>
-                </div>
-                </div>
-                </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-                <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                  <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
-                      <h2 class="mdl-card__title-text " id="blueCard">News</h2>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                      <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
-                          <h2 class="mdl-card__title-text ">News</h2>
-                        </div>
-                        </div> 
-                        </div>
-                        <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                          <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                            <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
-                              <h2 class="mdl-card__title-text " id="blueCard">News</h2>
-                            </div>
-                            </div>
-                            </div>
-            
-                            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                              <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                                <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
-                                  <h2 class="mdl-card__title-text " color="">News</h2>
-                                </div>
-                                </div>
-                                </div>
-                                <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                                  <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                                    <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
-                                      <h2 class="mdl-card__title-text " id="blueCard">News</h2>
-                                    </div>
-                                    </div>
-                                    </div>
-
-
-          </main>
-     
-            <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
