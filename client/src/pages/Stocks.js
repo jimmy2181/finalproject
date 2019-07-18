@@ -55,62 +55,80 @@ class Books extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>What Books Should I Read?</h1>
-            </Jumbotron>
-            <form>
-              <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
-              <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
-              />
-              <FormBtn
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}
-              >
-                Submit Book
-              </FormBtn>
-            </form>
-          </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Books On My List</h1>
-            </Jumbotron>
-            {this.state.books.length ? (
-              <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
-                      <strong>
-                        {book.title} by {book.author}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
-        </Row>
-      </Container>
+      <div>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <img src="https://images.pexels.com/photos/36715/pigeon-flight-twig.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="Logo"/>
+          <div class="logoSpot">
+          <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+      </div>
+      <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">home</i>Home</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">person</i>Your Stocks</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">trending_up</i>Stock Market</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">pie_chart</i>Budget</a>
+        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--amber-400 material-icons" role="presentation">verified_user</i>Log in / Log out</a>
+       <div class="mdl-layout-spacer"></div>
+      </nav>
+    
+
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="mdl-grid demo-content">
+        <div class="demo-charts mdl-color--blue-grey-900 mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+          <img class="frontIMG" src="car3.png"/>
+          </div>
+          
+          
+          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                <h2 class="mdl-card__title-text " id="yellowCard">Stocks</h2>
+              </div>
+              </div>
+              </div>
+
+              <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                  <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                    <h2 class="mdl-card__title-text " id="blueCard">Stocks</h2>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                      <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                        <h2 class="mdl-card__title-text ">Stocks</h2>
+                      </div>
+                      </div> 
+                      </div>
+                      <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                        <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                          <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                            <h2 class="mdl-card__title-text " id="blueCard">News</h2>
+                          </div>
+                          </div>
+                          </div>
+          
+                          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                              <div class="mdl-card__title mdl-card--expand mdl-color--amber-300">
+                                <h2 class="mdl-card__title-text " color="">News</h2>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                                  <div class="mdl-card__title mdl-card--expand mdl-color--blue-grey-800">
+                                    <h2 class="mdl-card__title-text " id="blueCard">News</h2>
+                                  </div>
+                                  </div>
+                                  </div>
+</div>
+
+        </main> 
+        </div>
     );
   }
 }
